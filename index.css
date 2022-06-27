@@ -35,6 +35,7 @@ h1 {
   width: 450px;
   background: white;
   border-radius: 20px;
+  box-shadow: 0 20px 30px #b9c8f0;
 
   display: flex;
   flex-direction: column;
@@ -91,7 +92,8 @@ h1 {
   width: 350px;
   border-radius: 10px;
   background: hsl(245, 75%, 52%);
-  color: white;
+  box-shadow: 0 10px 30px hsl(244, 32%, 75%);
+  color: rgb(255, 255, 255);
   font-weight: 700;
 
   display: flex;
