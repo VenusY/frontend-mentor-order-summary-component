@@ -1,0 +1,178 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  background: url("images/pattern-background-desktop.svg"), hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  
+  font-family: "Red Hat Display";
+  font-size: 16px;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.container {
+  height: 100%;
+  margin: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 700px;
+  width: 450px;
+  background: white;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-block {
+  background: hsl(225, 100%, 98%);
+  height: 100px;
+  width: 350px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+}
+
+#plan-name {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 5px;
+}
+
+#plan-cost {
+  color: hsl(224, 23%, 55%);
+  margin-top: 5px;
+}
+
+#message {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  margin: 0px 50px 20px 50px;
+}
+
+#illustration {
+  border-radius: 20px 20px 0px 0px;
+}
+
+#music-note-icon {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+#change-button {
+  margin-left: auto;
+  margin-right: 25px;
+  font-weight: 700;
+  font-size: 15px;
+  color: hsl(245, 75%, 52%);
+}
+
+#proceed-button {
+  height: 50px;
+  width: 350px;
+  border-radius: 10px;
+  background: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cancel-button {
+  margin-bottom: 50px;
+  margin-top: auto;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+
+#proceed-link, #cancel-button {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#change-button:hover,
+#change-button:focus {
+  text-decoration: none;
+  color: #766cf1;
+}
+
+#proceed-button:hover,
+#proceed-button:focus {
+  background: #766cf1;
+}
+
+#cancel-button:hover,
+#cancel-button:focus {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background: url("images/pattern-background-mobile.svg"), hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    
+    font-size: 15px;
+  }
+
+  h1 {
+    margin-top: 35px;
+    font-size: 24px;
+  }
+
+  .card {
+    width: 340px;
+    height: 590px;
+  }
+
+  .plan-block {
+    width: 290px;
+    height: 90px;
+  }
+
+  #message {
+    margin: 0px 40px 25px 40px;
+  }
+
+  #illustration {
+    width: 340px;
+  }
+
+  #music-note-icon {
+    margin: 0px 15px 0px 15px;
+  }
+
+  #change-button {
+    font-size: 14px;
+  }
+  
+  #proceed-button {
+    width: 290px;
+  }
+
+  #cancel-button {
+    margin: auto 0px 35px 0px
+  }
+}
